@@ -1,4 +1,3 @@
-
 import { createContext, useContext, useEffect, useState } from "react";
 
 const MovieContext = createContext();
@@ -48,4 +47,3 @@ export function MovieProvider({ children }) {
 
 export function useMovies() {
   return useContext(MovieContext);
-}
