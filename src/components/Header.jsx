@@ -30,6 +30,13 @@ function Header({ onSearch }) {
         <a href="/favorites">Favorites</a>
       </nav>
 
+<nav>
+  <Link to="/">Home</Link>
+  <Link to="/watchlist">Watchlist</Link>
+  <Link to="/favorites">Favorites</Link>
+</nav>
+
+import { Link } from "react-router-dom";
       <form onSubmit={handleSubmit} role="search">
         <input
           type="search"
