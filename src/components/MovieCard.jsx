@@ -1,6 +1,5 @@
-
 import { useState } from "react";
-
+import { useMovies } from "../contexts/MovieContext";
 const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500";
 const PLACEHOLDER_IMAGE =
   "https://placehold.co/300x450?text=No+Poster";
@@ -79,5 +78,9 @@ function MovieCard({ movie }) {
     </article>
   );
 }
+const { watchlist, addToWatchlist, removeFromWatchlist } = useMovies();
 
+const isInWatchlist = watchlist.some(
+  (item) => item.id === movie.id
+);
 export default MovieCard;
