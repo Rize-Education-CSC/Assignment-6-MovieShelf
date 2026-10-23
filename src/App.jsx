@@ -54,6 +54,7 @@ function App() {
           element={<Home searchResults={searchResults} />}
         />
         <Route path="/favorites" element={<Favorites />} />
+        <Route path="/watchlist" element={<Watchlist />} />
       </Routes>
     </BrowserRouter>
   );
